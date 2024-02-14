@@ -1,0 +1,13 @@
+.banner {
+  background-image: url('https://cdn.sanity.io/images/tlr8oxjg/production/1ca7b34a8d5308a03ae186dfe72caabce0327fe2-1456x816.png?w=3840&q=80&fit=clip&auto=format');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+}
+
+.banner h1 {
+  text-align: center;
+  color: white;
+}
