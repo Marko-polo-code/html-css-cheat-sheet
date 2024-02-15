@@ -29,8 +29,456 @@
     </div>
   </nav>
 
+  <div class="content">
     <h1>CSS Cheat Sheet</h1>
-    <p>This is your CSS cheat sheet content.</p>
-    <a href="./../index.html">Back to Homepage</a>
+    <p>CSS i.e. Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in a markup language such as HTML, XML, etc. CSS enhances the look and feel of the webpage by describing how elements should be rendered on screen or in other media.</p>
+
+    <section class="Selectors">
+      <h2>Selectors</h2>
+      <p>Selectors: Used to find or select the HTML elements you want to style. These are categorized as follows:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Basic Selectors</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Universal</td>
+            <td>Selects all elements on the pages.</td>
+            <td>*{property:value;}</td>
+          </tr>
+          <tr>
+            <td>Type</td>
+            <td>Selects all HTML tag/element of given type in your document.</td>
+            <td>p {property:value;}</td>
+          </tr>
+          <tr>
+            <td>Id</td>
+            <td>Selects an element based on the value of its unique id attribute</td>
+            <td>#id {property:value;}</td>
+          </tr>
+          <tr>
+            <td>Class</td>
+            <td>Selects all elements in the document that have the given class attribute.</td>
+            <td>.class {property:value;}</td>
+          </tr>
+          <tr>
+            <td>Attribute</td>
+            <td>Selects all elements that have a specified attribute.</td>
+            <td>a[attribute=value] {property:value;}</td>
+          </tr>
+          <tr>
+            <td>Combinators</td>
+            <td>Complex selectors consisting of more than one selectors having some relationship between them.</td>
+            <td>selector1 selector2/ selector 1+selector2 / selector 1> selector 2 {property: value;}</td>
+          </tr>
+          <tr>
+            <td>Pseudo</td>
+            <td>Define the special state of an element to add an effect to an existing element based on its states.</td>
+            <td>selector: pseudo-class{property: value;}</td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+
+    <section class="font properties">
+      <h2>Font Properties</h2>
+      <p>Font Properties: CSS font properties are used to set the font’s content of the HTML element as per requirement.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Font-family</td>
+            <td>Specifies the font family to be used for the element’s text content.</td>
+            <td>font-family: family-name | generic-family | initial | inherit;</td>
+          </tr>
+          <tr>
+            <td>Font-style</td>
+            <td>Styles the text content in a normal, italic, or oblique face from its font-family.</td>
+            <td>font-style: normal | italic | oblique | initial | inherit;</td>
+          </tr>
+          <tr>
+            <td>Font-variant</td>
+            <td>Converts all lowercase letters into uppercase letters.</td>
+            <td>font-variant: normal | small caps | initial;</td>
+          </tr>
+          <tr>
+            <td>Font-weight</td>
+            <td>Specifies thickness or weight of the font</td>
+            <td>font-weight: normal | bold | number | initial | inherit | unset;</td>
+          </tr>
+          <tr>
+            <td>Font-size</td>
+            <td>Specifies the size of the text in HTML document.</td>
+            <td>font-size: small | medium | large | initial | inherit;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="text properties">
+      <h2>Text Properties</h2>
+      <p>Text-properties: CSS text formatting properties are used to format and style text by setting their color, alignment, spacing, etc. as per requirement.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Text-color</td>
+            <td>Sets the color of the text.</td>
+            <td>color: value;</td>
+          </tr>
+          <tr>
+            <td>Text-alignment</td>
+            <td>Defines the horizontal alignment of the text.</td>
+            <td>text-align: left|right|center|justify|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Text-decoration</td>
+            <td>Add or remove text- decorations.</td>
+            <td>text-decoration: decoration-type;</td>
+          </tr>
+          <tr>
+            <td>Text-transformation</td>
+            <td>Changes the case(uppercase|lowercase) of text.</td>
+            <td>text-transform: none|capitalize|uppercase|lowercase|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Text-indentation</td>
+            <td>Indents the first line of text block.</td>
+            <td>text-indent: length|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Letter spacing</td>
+            <td>Specifies spacing between the characters of the text.</td>
+            <td>letter-spacing: normal|length|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Line height</td>
+            <td>Specifies the space between the lines of the text.</td>
+            <td>line-height: normal|number|length|percentage|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Text-shadow</td>
+            <td>Adds shadow to the text.</td>
+            <td>text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit</td>
+          </tr>
+          <tr>
+            <td>Word spacing</td>
+            <td>Specifies space between words of lines.</td>
+            <td>word-spacing: normal|length|initial|inherit;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="background properties">
+      <h2>Background Properties</h2>
+      <p>Background properties: The CSS background properties are used to design the background and define the background effects for elements.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Background-color</td>
+            <td>Specifies the background color of an element.</td>
+            <td>background-color: color_name;</td>
+          </tr>
+          <tr>
+            <td>Background-image</td>
+            <td>Adds one or more background images to an element.</td>
+            <td>background-image: url('url');</td>
+          </tr>
+          <tr>
+            <td>Background-repeat</td>
+            <td>Adds or remove repeat the background image both horizontally and vertically.</td>
+            <td>background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Background-position</td>
+            <td>Specifies the positioning of the image in a certain way.</td>
+            <td>background-position: value;</td>
+          </tr>
+          <tr>
+            <td>Background-origin</td>
+            <td>Used to adjust the background image of the webpage.</td>
+            <td>background-origin: padding-box |border-box |content-box | initial| inherit;</td>
+          </tr>
+          <tr>
+            <td>Background-attachment</td>
+            <td>Specifies the kind of attachment of the background image in its container</td>
+            <td>background-attachment: scroll|fixed|local|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Background-clip</td>
+            <td>Used to define how far the background (color or image) should extend.</td>
+            <td>background-clip: border-box|padding-box|content-box|initial|inherit;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="box properties">
+      <h2>Box Properties</h2>
+      <p>Box Properties: The CSS box model is essentially a box that wraps around every HTML element consisting of the border, padding, margin, and content. The CSS properties used to attain the box model are:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Margin</td>
+            <td>Used to set the margin</td>
+            <td>margin: value;</td>
+          </tr>
+          <tr>
+            <td>Padding</td>
+            <td>Specifies the space between the border and the content of the selector.</td>
+            <td>padding: value;</td>
+          </tr>
+          <tr>
+            <td>Border</td>
+            <td>Sets the element’s border width and set the style, and color of an element’s border.</td>
+            <td>border: value;</td>
+          </tr>
+          <tr>
+            <td>Width</td>
+            <td>Used to set an element’s width.</td>
+            <td>width: value;</td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td>Used to set an element’s height</td>
+            <td>height: value;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="chadow">
+      <h2>Shadow</h2>
+      <p>Shadow properties: These shadow properties are used to add shadow to text or boxes or frames of elements.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Text shadow</td>
+            <td>Adds shadow to text.</td>
+            <td>text-shadow: h-shadow v-shadow blur-radius color| none |initial | inherit;</td>
+          </tr>
+          <tr>
+            <td>Box shadow</td>
+            <td>Gives shadow-like effect to the box or frames of an element.</td>
+            <td>box-shadow: h-offset v-offset blur spread color |none |inset |initial | inherit;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="gradient">
+      <h2>Gradient</h2>
+      <p>Gradient: The CSS gradient property is used to create transition between two or more specified colors</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Gradient</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Linear Gradient</td>
+            <td>Creates smooth color transitions.</td>
+            <td>background-image: linear-gradient(direction, color-stop1, color-stop2, …);</td>
+          </tr>
+          <tr>
+            <td>Radial Gradient</td>
+            <td>Used to obtain an elliptical shape gradient.</td>
+            <td>background-image: radial-gradient(shape size at position, start-color, …, last-color);</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="Border">
+      <h2>Border</h2>
+      <p>Border Properties: The CSS border properties allow you to specify how the border of the box representing an element should look.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Border Color</td>
+            <td>Specifies the color of the border of the box. Works only when the border-style property is defined.</td>
+            <td>border-color: color-value;</td>
+          </tr>
+          <tr>
+            <td>Border Style</td>
+            <td>Sets the style of the border as solid, dotted, rigged, etc.</td>
+            <td>border-style: value;</td>
+          </tr>
+          <tr>
+            <td>Border Width</td>
+            <td>Sets the width of the border of the element.</td>
+            <td>border-width: length |thin |medium |thick |initial |inherit</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="classification">
+      <h2>Classification</h2>
+      <p>Classification Properties: The CSS classification properties allow you to specify how and where an element is displayed.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Display</td>
+            <td>Defines how elements are displayed in the web page.</td>
+            <td>display: inline|block|flex|grid|table|group|none|inherit;</td>
+          </tr>
+          <tr>
+            <td>Float</td>
+            <td>Defines flow of content</td>
+            <td>float: none|left|right|initial| inherit;</td>
+          </tr>
+          <tr>
+            <td>Position</td>
+            <td>Specifies the positioning method of html entity on the web page.</td>
+            <td>position: fixed|static|absolute|relative |sticky;</td>
+          </tr>
+          <tr>
+            <td>Clear</td>
+            <td>Sets the sides of an element where no other floating elements are allowed.</td>
+            <td>clear: left|right|both|none;</td>
+          </tr>
+          <tr>
+            <td>Visibility</td>
+            <td>Set an element as visible or not.</td>
+            <td>visibility: visible|hidden|collapse|initial|inherit;</td>
+          </tr>
+          <tr>
+            <td>Cursor</td>
+            <td>Specifies the type or shape of cursor</td>
+            <td>cursor: auto|default|pointer|crosshair|help| e-resize | all-scroll |progress |initial |inherit;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="css functions">
+      <h2>CSS functions</h2>
+      <p>CSS Functions: CSS has a range of inbuilt functions. These are used as a value for various CSS properties. Some of the CSS functions can be nested as well. It ranges from simple color functions to mathematical, shape, color, transform, gradient, and animations functions. Some of the key functions are:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Function</th>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>attr()</td>
+            <td>Retrieves the value of an attribute of the selected elements</td>
+            <td>attr( attr_name );</td>
+          </tr>
+          <tr>
+            <td>calc()</td>
+            <td>Takes a single mathematical expression as its parameter and performs operations</td>
+            <td>calc( Expression );</td>
+          </tr>
+          <tr>
+            <td>max()</td>
+            <td>Returns the largest number of the given set of comma separated numbers.</td>
+            <td>max(value 1, value2, value3…)</td>
+          </tr>
+          <tr>
+            <td>url()</td>
+            <td>Takes a string URL as a parameter and is used to load images, fonts and content</td>
+            <td>url( &lt;string&gt; &lt;url-modifier&gt;* )</td>
+          </tr>
+          <tr>
+            <td>var()</td>
+            <td>Inserts the value of a custom property. Its name must start with two dashes.</td>
+            <td>var( custom_property, value )</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="media">
+      <h2>Media Queries</h2>
+      <p>Media Queries: The CSS Media Query is used to make the web page more responsive according to the different screens or media types. Media queries include a block of CSS only if a certain expression is true.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Media Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>All</td>
+            <td>It is used for all media devices.</td>
+          </tr>
+          <tr>
+            <td>Print</td>
+            <td>It is used when printer is in use.</td>
+          </tr>
+          <tr>
+            <td>Screen</td>
+            <td>It is used for computer screens, smartphones etc.</td>
+          </tr>
+          <tr>
+            <td>Speech</td>
+            <td>It is used for screen readers that read the screen aloud.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
 </body>
 </html>
