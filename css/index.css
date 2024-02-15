@@ -1,5 +1,3 @@
-@import url('html.css');
-@import url('css.css');
 
 .banner {
   background-image: url('https://cdn.sanity.io/images/tlr8oxjg/production/1ca7b34a8d5308a03ae186dfe72caabce0327fe2-1456x816.png?w=3840&q=80&fit=clip&auto=format');
@@ -14,4 +12,41 @@
 .banner h1 {
   text-align: center;
   color: white;
+}
+
+div.content {
+  margin-top: 50px;
+  width: 100%;
+  padding: 100px;
+  background-color: #f8f9fa;
+}
+
+section {
+  margin: 40px auto 40px auto;
+  width: 80%;
+}
+
+h1, h2, p {
+  text-align: center;
+  margin: 40px auto 40px auto;
+  width: 80%;
+}
+
+div table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+div table th, div table td {
+  border: 5px solid #070707;
+  padding: 10px;
+  text-align: left;
+}
+
+div table th {
+  background-color: #e9ecef;
+}
+
+div table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
