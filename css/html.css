@@ -1,0 +1,39 @@
+div.content {
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h1, h2, p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+div table th, div table td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: left;
+}
+
+div table th {
+  background-color: #e9ecef;
+}
+
+div table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
